@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import theme_pattern from '../../assets/theme_pattern.svg'
+import theme_pattern from '../../assets/custom_theme_removed.png'
 import profile_about from '../../assets/nara_lake.jpg'
 import icon_javascript from '../../assets/icon_javascript.png';
 import icon_typescript from '../../assets/icon_typescript.png';

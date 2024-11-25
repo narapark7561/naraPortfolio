@@ -20,9 +20,19 @@
     position: relative;
 }
 
+.about-title img {
+    position: absolute;
+    top: 60%; /* 텍스트의 중간에 위치 */
+    left: 80%; /* 텍스트의 가운데에 위치 */
+    transform: translate(-50%, -50%) scale(1.2); /* 중심 기준 위치 조정 및 크기 변경 */
+    z-index: -1; /* 이미지를 텍스트 뒤로 이동 */
+    opacity: 0.8; /* 약간 투명하게 설정 */
+    pointer-events: none; /* 이미지가 클릭되지 않도록 설정 */
+}
+
 .about-title h1{
     padding: 0px 30px;
-    font-size: 75px;
+    font-size: 70px;
     font-weight: 600;
 }
 
@@ -77,7 +87,7 @@
     width: 50%;
     height: 8px;
     border-radius: 50px;
-    background: linear-gradient(264deg, #DF8909 -5.09%, #B415FF 106.28%);
+    background: linear-gradient(20deg, #ffb3b8, #e6f7ff);
 }
 
 .about-achievements{
@@ -99,7 +109,7 @@
 .about-achievement h1{
     font-size: 60px;
     font-weight: 700;
-    background: linear-gradient(270deg, #DF8909 50.41%, #B415FF 90.25%);
+    background: linear-gradient(300deg, #fa7268, #ffb6c1, #c1b6f8, #89c2d9);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

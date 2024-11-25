@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import nara from '../../assets/Nara.png'
+import nara from '../../assets/new_logo.png'
 
 const Navbar = () => {
   return (
@@ -9,7 +9,7 @@ const Navbar = () => {
         <ul className='nav-menu'>
             <li>Home</li>
             <li>About Me</li>
-            <li>Services</li>
+            {/* <li>Experiences</li> */}
             <li>Projects</li>
             <li>Contact</li>
         </ul>
