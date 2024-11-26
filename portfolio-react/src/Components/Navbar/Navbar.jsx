@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import nara from '../../assets/new_logo.png'
+import nara from '../../assets/nara_final_logo.png'
 
 const Navbar = () => {
   return (
