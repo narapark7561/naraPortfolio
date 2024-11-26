@@ -17,4 +17,24 @@
     font-weight: 600;
 }
 
-        
+.contact-title h1{
+    padding: 0px 30px;
+    font-size:70px;
+    font-weight: 600;
+}
+
+.contact-title img {
+    position: absolute;
+    top: 60%; 
+    left: 80%; 
+    transform: translate(-50%, -50%) scale(1.2); 
+    z-index: -1; 
+    opacity: 0.8; 
+    pointer-events: none; 
+}
+
+.contact-section {
+    display: flex;
+    gap: 150px;
+    
+}
