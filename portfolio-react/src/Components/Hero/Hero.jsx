@@ -8,7 +8,7 @@ const Hero = () => {
       <img src={nara_profile} alt="nara's profile image"/>
       <h1><span>I'm Nara Park,</span> Full stack developer based in Canada.</h1>
       <p>
-        I am a passionate Full stack developer with hands-on experience in building full-stack applications and working on real-world projects.<br />
+        I am a passionate Full stack developer with hands-on experience.<br />
         I focus on creating efficient, user-friendly solutions to bridge technology and people.
       </p>
       <div className="hero-action">
