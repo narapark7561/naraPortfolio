@@ -5,8 +5,6 @@ import mail_icon from '../../assets/mail_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
 
 
-
-
 const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -16,18 +14,27 @@ const Contact = () => {
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
-
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: json
-    }).then((res) => res.json());
-
-    if (res.success) {
-      alert(res.message);
+  
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      });
+      const data = await res.json();
+  
+      if (data.success) {
+        alert("Form submitted successfully!");
+        event.target.reset(); // Reset Form
+      } else {
+        alert("Form submission failed. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred while submitting the form.");
     }
   };
 
