@@ -59,3 +59,34 @@
     text-decoration: none;
     color: #DD7C73;
 }
+
+/* 미디어 쿼리로 모바일 스타일 설정 */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* 세로 정렬 */
+        align-items: center;
+        margin: 20px 20px; /* 좌우 간격 축소 */
+    }
+
+    .navbar img {
+        width: 100px; /* 로고 크기 축소 */
+        margin-bottom: 10px;
+    }
+
+    .nav-menu {
+        display: flex; /* flexbox 활성화 */
+        flex-direction: row; /* 가로 정렬 */
+        justify-content: center; /* 중앙 정렬 */
+        align-items: center; /* 세로 정렬 */
+        gap: 15px; /* 메뉴 간 간격 조정 */
+        font-size: 16px; /* 글자 크기 축소 */
+    }
+
+    .nav-menu li {
+        align-items: center; /* 가운데 정렬 */
+    }
+
+    .nav-connect {
+        display: none; /* 모바일에서 버튼 숨기기 */
+    }
+}

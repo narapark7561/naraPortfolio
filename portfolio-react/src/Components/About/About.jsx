@@ -77,13 +77,3 @@ const About = () => {
 export default About
 
 
-{/* <div className="about-skills">
-<div className="about-skill"><p>JavaScript</p><hr style={{width:"50%"}} /></div>
-<div className="about-skill"><p>TypeScript</p><hr style={{width:"80%"}} /></div>
-<div className="about-skill"><p>React</p><hr style={{width:"70%"}} /></div>
-<div className="about-skill"><p>Next.js</p><hr style={{width:"60%"}} /></div>
-<div className="about-skill"><p>Node.js</p><hr style={{width:"50%"}} /></div>
-</div>
-</div>
-</div>
-</div> */}

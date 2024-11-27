@@ -46,3 +46,39 @@
     transform: scale(1.10);
     transition: 0.3s;
 }
+
+@media(max-width:768px){
+    .mywork{
+        gap:50px;
+        margin: 50px 35px;
+        align-items: start;
+    }
+
+    .mywork-title h1{
+        padding: 0;
+        font-size: 35px;
+    }
+
+    .mywork-title img{
+        width:250px;
+        right:-50px;
+    }
+
+    .mywork-container{
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .mywork-container img {
+        margin: 0 auto; /* 중앙 정렬 */
+        height: 100%;
+        width: 100%;
+    }
+
+    .mywork-container img:hover{
+        transform: scale(1.10);
+        transition: 0.3s;
+    }
+
+
+}

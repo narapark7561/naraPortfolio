@@ -117,4 +117,67 @@
     transform: scale(1.1);
     transition: 0.3s;
 }
+@media(max-width:768px){
+    .contact{
+        gap:50px;
+        margin: 50px 35px;
+        align-items: start;
+        padding-top: 80px;
+    }
 
+    .contact-title h1{
+        padding: 0;
+        font-size: 35px;
+    }
+
+    .contact-title img{
+        width:250px;
+        right:-50px;
+    }
+
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .contact-left h1{
+        font-size: 25px;
+        margin-top: -20px;
+    }
+
+    .contact-left p{
+        font-size: 16px;
+    }
+
+    .contact-detail {
+        gap: 10px; 
+    }
+
+    .contact-detail img {
+        width: 18px; /* 모바일에서 아이콘 크기 조정 */
+        height: 18px;
+        object-fit: contain; /* 아이콘 비율 유지 */
+    }
+
+    .contact-right{
+        margin-top: -60px;
+    }
+    .contact-right label{
+        font-size: 20px;
+    }
+
+    .contact-right input{
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .contact-right textarea{
+        width: 95%;
+        font-size: 18px;
+    }
+
+    .contact-submit{
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+
+}

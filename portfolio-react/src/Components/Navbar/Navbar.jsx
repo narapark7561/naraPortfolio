@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import './Navbar.css'
 import nara from '../../assets/nara_final_logo.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+
+
 const Navbar = () => {
 
   const [menu, setMenu] = useState("home");
+
+
   return (
     <div className="navbar">
       <img src={nara} alt="nara's logo" />
