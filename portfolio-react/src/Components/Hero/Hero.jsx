@@ -4,7 +4,7 @@ import nara_profile from '../../assets/nara_cropped.jpg'
 
 const Hero = () => {
   return (
-    <div className='hero'>
+    <div id='home' className='hero'>
       <img src={nara_profile} alt="nara's profile image"/>
       <h1><span>I'm Nara Park,</span> Full stack developer based in Canada.</h1>
       <p>
