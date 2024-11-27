@@ -10,28 +10,26 @@ import location_icon from '../../assets/location_icon.svg'
 const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
 
-    const response = await fetch("https://api.web3forms.com/submit", {
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData
-    });
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
 
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Form Submitted Successfully");
-      event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
+    if (res.success) {
+      alert(res.message);
     }
   };
-
-
 
     return (
       <div id='contact' className="contact">
@@ -51,7 +49,7 @@ const Contact = () => {
                 </div>
             </div>
           </div>
-          <form className="contact-right">
+          <form onSubmit={onSubmit} className="contact-right">
             <label>Your Name</label>
             <input type="text" placeholder='Enter your name' name='name'></input>
             <label>Your Email</label>
@@ -66,4 +64,4 @@ const Contact = () => {
   };
   
 
-export default Contact
+export default Contact;
