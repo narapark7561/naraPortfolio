@@ -15,7 +15,17 @@ const Hero = () => {
       </p>
       <div className="hero-action">
         <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect with me</AnchorLink></div>
-        <div className="hero-resume">My resume</div>
+        {/* <div className="hero-resume">My resume</div> */}
+        <div className="hero-resume">
+          <a
+            href="/resume.pdf" // PDF 파일 경로
+            target="_blank" // 새 탭에서 열기
+            rel="noopener noreferrer" // 보안 강화
+            className="anchor-link" // 기존 스타일링 활용
+          >
+            My resume
+          </a>
+        </div>
       </div>
       </div>
   )
